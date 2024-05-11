@@ -28,7 +28,7 @@ const Homepage = () => {
         <section>
           <Slideshow/>
         </section>
-        <section>
+        <section id="about">
           <Aboutus/>
         </section>
       </main>
