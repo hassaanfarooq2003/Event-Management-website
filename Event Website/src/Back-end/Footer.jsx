@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p>&copy; BASTARDS, ALL OF YOU ARE BASTARDS, FUCKYALLLLLLLLL</p>
+        <p>&copy; Made by Professional Jugarsters</p>
       </div>
     </footer>
   );
