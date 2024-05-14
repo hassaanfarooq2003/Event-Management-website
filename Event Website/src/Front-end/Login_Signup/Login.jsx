@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './login.css';
-
+import { useNavigate } from 'react-router-dom';
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
   const handleLogin = async () => {
     try {
@@ -14,12 +15,12 @@ const Login = () => {
       // Store the user data in the local storage
       localStorage.setItem('user', JSON.stringify(user));
 
-      console.log('Login successful:', response.data);
+      // Redirect the user to the dashboard or any other desired page
+      navigate('/');
     } catch (error) {
       console.error('Login error:', error.response.data);
     }
   };
-
   return (
     <>
       <div className='login'>

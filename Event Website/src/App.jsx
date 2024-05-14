@@ -9,7 +9,10 @@ import MyCards from './Front-end/MyCards/MyCards';
 import ReservedCards from './Front-end/ReservedCards/ReservedCards';
 import Login from './Front-end/Login_Signup/Login';
 import Signup from './Front-end/Login_Signup/Signup';
+import Contact from './Front-end/Contact/Contact';
+import Payment from './Front-end/Payment/Payment'
 import './App.css';
+import CreditCard from './Front-end/Payment/CreditCard';
 
 function App() {
   return (
@@ -25,6 +28,7 @@ function App() {
             <Route path="/reserved-cards" element={<ReservedCards />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
         <Footer />
