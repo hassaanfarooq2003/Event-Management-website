@@ -6,6 +6,9 @@ import Pic1 from '../Images/event-homepage.svg'
 import Slideshow from '../Back-end/ImageCarousel/Slideshow'
 import Aboutus from './Aboutus'
 
+//Homepage
+//calling the slideshow and aboutus
+
 const Homepage = () => {
   return (
     <>
@@ -18,7 +21,9 @@ const Homepage = () => {
                 Book and learn helpful tips from 3,168+ mentors in world-class
                 companies with our global community.
               </p>
-              <button className='explore-btn'>Explore Now</button>
+              <p>
+                Get started with our platform and host your events with us!
+              </p>
             </div>
             <div className='hero-images'>
               <Image src={Pic1} alt='pic1' width={500} height={500} />

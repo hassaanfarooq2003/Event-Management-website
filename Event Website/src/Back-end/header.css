@@ -1,5 +1,3 @@
-/* navbar.css */
-
 /* General Styles */
 .navbar {
     background-color: #101720;
@@ -40,12 +38,12 @@
 
   @media (max-width: 767px) {
     .navbar-brand img {
-      width: 80px; /* Adjust the logo size for smaller screens */
+      width: 80px; /*Make the logo smaller*/
       height: auto;
     }
   
     .navbar-toggler {
-      margin-right: 10px; /* Add some spacing between the toggler and other elements */
+      margin-right: 10px; /* Adding margins to the right  */
     }
   
     .navbar-nav {
@@ -54,7 +52,7 @@
     }
   
     .nav-link {
-      padding: 0.5rem 0; /* Reduce the padding for nav links on smaller screens */
+      padding: 0.5rem 0; 
     }
   
     .login-link {

@@ -13,6 +13,12 @@ import Contact from './Front-end/Contact/Contact';
 import Payment from './Front-end/Payment/Payment'
 import './App.css';
 import CreditCard from './Front-end/Payment/CreditCard';
+import Description from './Front-end/Description/Description.jsx';
+import Describe from './Front-end/Decsribe/Describe.jsx';
+
+//created a routing path into the application
+//calling the header which uses the link to navigate to the different pages through route paths
+//calling the routes
 
 function App() {
   return (
@@ -29,6 +35,10 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/description" element={<Description />} />
+            <Route path="/payment" element={<Payment />} />
+            <Route path="/credit-card" element={<CreditCard />} />
+            <Route path="/describe" element={<Describe />} />
           </Routes>
         </div>
         <Footer />

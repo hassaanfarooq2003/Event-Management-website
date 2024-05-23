@@ -31,7 +31,12 @@
     color: #fff;
     padding: 2rem;
   }
-  
+  .social-icons a {
+    color: #fff;
+  }
+  .social-icons a:hover {
+    color: black
+  }
   .social-icons svg {
     margin: 0 1rem;
   }

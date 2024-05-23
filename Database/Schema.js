@@ -16,7 +16,7 @@ const User = mongoose.model('User', userSchema);
 // Event Schema
 const eventSchema = new Schema({
   eventId: { type: Number, unique: true },
-  title: { type: String, required: true },
+  title: { type: String, required: true, unique: true },
   details: { type: String, required: true },
   location: { type: String, required: true },
   city: { type: String, required: true },
@@ -27,7 +27,7 @@ const eventSchema = new Schema({
   vipTickets: { type: Number, required: true },
   regTickets: { type: Number, required: true },
   price: { type: Number, required: true },
-  image: { type: Buffer, required: true },
+  image: { type: String, required: true },
   deleteStatus: { type: Boolean, default: false }
 });
 

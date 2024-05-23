@@ -1,20 +1,55 @@
 import React from 'react'
 import './aboutus.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import {
+  faFacebook,
+  faTwitter,
+  faInstagram
+} from '@fortawesome/free-brands-svg-icons'
 
+{/*About us page */}
 const Aboutus = () => {
   return (
-    <div className="about-work">
-      <div className="content">
+    //Displaying the information
+    <div className='about-work'>
+      <div className='content'>
         <h1>About Work</h1>
-        <p>Oh feel if up to till like. He an thing rapid these after going drawn or. Timed she his law the spoil round defer. In surprise concerns informed betrayed he learning is ye. Ignorant formerly so ye blessing.</p>
-        <p>He as spoke avoid given downs money on we. Of properly carriage shutters ye as wandered up repeated moreover.</p>
+        <p>
+          Welcome to Eventify, where dreams become reality in Pakistan. Founded
+          by Hassaan Farooq and Kynat Mansha, we specialize in crafting
+          unforgettable events tailored to your vision. With a deep
+          understanding of Pakistani culture and a commitment to excellence, we
+          curate experiences that leave a lasting impression.
+        </p>
+        <p>
+          From weddings to corporate gatherings, trust us to bring your story to
+          life with precision and finesse. Welcome to a world of celebration
+          with Eventify.
+        </p>
       </div>
-      <div className="social-icons">
-        <FontAwesomeIcon icon={faFacebook} size="2x" />
-        <FontAwesomeIcon icon={faTwitter} size="2x" />
-        <FontAwesomeIcon icon={faInstagram} size="2x" />
+      {/*Social media icons */}
+      <div className='social-icons'>
+        <a
+          href='https://www.facebook.com/groups/2506986672753736'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <FontAwesomeIcon icon={faFacebook} size='2x' />
+        </a>
+        <a
+          href='https://twitter.com/?lang=en'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <FontAwesomeIcon icon={faTwitter} size='2x' />
+        </a>
+        <a
+          href='https://www.instagram.com/p/C62t09OAhxs/?igsh=d2sydXR2emNzM29x'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <FontAwesomeIcon icon={faInstagram} size='2x' />
+        </a>
       </div>
     </div>
   )

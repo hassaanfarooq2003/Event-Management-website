@@ -1,7 +1,25 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './creditcard.css'
+import axios from 'axios';
 
 const CreditCard = () => {
+  const navigate = useNavigate(); 
+
+  const handlereservetable = async () => {
+    try {
+      const eventId = localStorage.getItem('eventId');
+      const userId = JSON.parse(localStorage.getItem('user')).userId;
+      const ticketType = localStorage.getItem('ticketType');
+      const response = await axios.post('http://localhost:8081/api/reserve-event', {eventId, userId,ticketType});
+      console.log(response.data);
+      alert('Reservation Successful');
+      navigate('/');
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  }
+
   return (
     <>
       <div className="creditcard-container">
@@ -32,7 +50,7 @@ const CreditCard = () => {
                 <input className="creditcard-input-field" type="password" id="cvv" placeholder="&#9679;&#9679;&#9679;" />
               </div>
             </div>
-            <button className="creditcard-purchase-btn">Submit</button>
+            <button className="creditcard-purchase-btn" onClick={handlereservetable}>Submit</button>
           </div>
         </div>
       </div>
